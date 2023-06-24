@@ -4,7 +4,6 @@
     font-family: 'Poppins', sans-serif;
 }
 
-
 body{
     display: grid;
     grid-template: 9rem auto/ 17rem auto;
@@ -32,10 +31,6 @@ body{
     flex-direction: column;
     padding-top: 40%;
     padding-left: 2rem;
-    
-    
-    
-
 }
 
 #mainItem{
@@ -57,7 +52,6 @@ body{
     font-size: 2.1rem;
     margin-left: 3px;
     font-weight: 700;
-    
 }
 
 .sideBarItem{
@@ -75,7 +69,6 @@ body{
     color: black;
     font-weight: 600;
     font-size: 1.2rem;
-
 }
 
 a{
@@ -100,7 +93,6 @@ a{
     padding-right: 2rem;
     border-bottom: solid grey thin;
     border-left: solid thin grey;
-    
 }
 
 .userIcon{
@@ -112,7 +104,6 @@ a{
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    
 }
 
 .trendingUserIcon{
@@ -149,7 +140,6 @@ a{
     flex-direction: row;
     margin-bottom: 1rem;
 }
-
 
 
 .trendingUserId{
@@ -362,7 +352,6 @@ a{
     padding-bottom: 1rem;
     margin-top: 1rem;
     border-bottom: solid thin black;
-    
 }
 
 .announcementTitle{
@@ -371,7 +360,6 @@ a{
     font-weight: 600;
     margin-bottom: .3rem;
     color: black;
-    
 }
 
 .announcementText{
@@ -391,5 +379,4 @@ a{
     padding:1rem;
     box-shadow: 3px 3px 2px #888888;
     border-radius: 5px;
-
 }
