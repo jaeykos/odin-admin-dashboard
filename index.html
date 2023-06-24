@@ -9,90 +9,172 @@
 </head>
 <body>
     
-    <div id="sideBar">  
-        <a id="mainItem"  href=""><img src="/resources/view-dashboard.svg" alt="" id="mainLogo" ><p id="mainLink" class="sideBarLink">Dashboard</p></a>
-        <a class="sideBarItem" href=""><img src="/resources/home.svg" alt="" class="sideBarLogo"><p class="sideBarLink">Home</p></a>
-        <a class="sideBarItem" href=""><img src="/resources/card-account-details.svg" alt="" class="sideBarLogo"><p class="sideBarLink">Profile</p></a>
-        <a class="sideBarItem" href=""><img src="/resources/message.svg" alt="" class="sideBarLogo"><p class="sideBarLink">Messages</p></a>
-        <a class="sideBarItem" href=""><img src="/resources/clock-time-five.svg" alt="" class="sideBarLogo"><p class="sideBarLink">History</p></a>
-        <a class="sideBarItem" href=""><img src="/resources/note-multiple.svg" alt="" class="sideBarLogo"><p class="sideBarLink">Tasks</p></a>
-        <a class="sideBarItem" href=""><img src="/resources/account-group.svg" alt="" class="sideBarLogo"><p class="sideBarLink">Communities</p></a>
-        <a id="itemSettings" class="sideBarItem" href=""><img src="/resources/cog.svg" alt="" class="sideBarLogo"><p class="sideBarLink">Settings</p></a>
-        <a class="sideBarItem" href=""><img src="/resources/help-box.svg" alt="" class="sideBarLogo"><p class="sideBarLink">Support</p></a>
-        <a class="sideBarItem" href=""><img src="/resources/shield-check.svg" alt="" class="sideBarLogo"><p class="sideBarLink">Privacy</p></a>
+    <div id="sideBar"> 
+        <div id="sideBarContainerForSticky">
+            <a id="mainItem"  href=""><img src="/resources/view-dashboard.svg" alt="" id="mainLogo" ><p id="mainLink" class="sideBarLink">Dashboard</p></a>
+            <a class="sideBarItem" href=""><img src="/resources/home.svg" alt="" class="sideBarLogo"><p class="sideBarLink">Home</p></a>
+            <a class="sideBarItem" href=""><img src="/resources/card-account-details.svg" alt="" class="sideBarLogo"><p class="sideBarLink">Profile</p></a>
+            <a class="sideBarItem" href=""><img src="/resources/message.svg" alt="" class="sideBarLogo"><p class="sideBarLink">Messages</p></a>
+            <a class="sideBarItem" href=""><img src="/resources/clock-time-five.svg" alt="" class="sideBarLogo"><p class="sideBarLink">History</p></a>
+            <a class="sideBarItem" href=""><img src="/resources/note-multiple.svg" alt="" class="sideBarLogo"><p class="sideBarLink">Tasks</p></a>
+            <a class="sideBarItem" href=""><img src="/resources/account-group.svg" alt="" class="sideBarLogo"><p class="sideBarLink">Communities</p></a>
+            <a id="itemSettings" class="sideBarItem" href=""><img src="/resources/cog.svg" alt="" class="sideBarLogo"><p class="sideBarLink">Settings</p></a>
+            <a class="sideBarItem" href=""><img src="/resources/help-box.svg" alt="" class="sideBarLogo"><p class="sideBarLink">Support</p></a>
+            <a class="sideBarItem" href=""><img src="/resources/shield-check.svg" alt="" class="sideBarLogo"><p class="sideBarLink">Privacy</p></a>
+        </div> 
+        
     </div>
     <div id="mainUpper">
         <div id="upperRow1">
-            <div id="searchIcon"></div>
-            <div id="searchBar"></div>
-            <div id="alarmIcon"></div>
-            <div id="userIconRow1"></div>
-            <label id="userName"></label>
+            <input type = "text" id="searchBar">
+            <img src="/resources/magnify.svg" id="searchIcon">
+            <img src="/resources/bell-ring-outline.svg" id="alarmIcon">
+            <div id="userIconRow1" class="userIcon">JK</div>
+            <label id="userName">Jae Kang</label>
         </div>
         <div id="upperRow2">
-            <div id="userIconRow2"></div>
+            <div id="userIconRow2" class="userIcon">JK</div>
             <div id="welcomeTextDiv">
-                <p id="HiThere">Hi there,</p>
+                <p id="hiThere">Hi there,</p>
                 <p id="userNameWithID"> Jae Kang (@jaekang)</p>
             </div>
-            <button class="rightRow2Btn">New</button>
+            <button id="newBtn" class="rightRow2Btn">New</button>
             <button class="rightRow2Btn">Upload</button>
             <button class="rightRow2Btn">Share</button>
         </div>
     </div>
     <div id="mainLower">
         <div id="projectBrowser">
-            <h1>Your Projects</h1>
+            <h1 id="yourProjects">Your Projects</h1>
             <div id="projectBrowserContainer">
-                <div class="projectCard">
-                    <label for="" class="projectName"></label>
+                <div class="projectCard" href="">
+                    <label for="" class="projectName">Project</label>
                     <p class="projectText">
                         Was certainty remaining engrossed applauded sir how discovery. Settled opinion how enjoyed greater joy adapted too shy. 
                     </p>
-                    <div class="projectIcons"><img src="" alt="" class="projectIcon"><img src="" alt="" class="projectIcon"><img src="" alt="" class="projectIcon"></div>
+                    <div class="projectIcons">
+                        <img src="resources/star-plus-outline.svg" alt="" class="projectIcon">
+                        <img src="resources/eye-plus-outline.svg" alt="" class="projectIcon">
+                        <img src="resources/share-variant-outline.svg" alt="" class="projectIcon">
+                    </div>
                 </div>
-                <div class="projectCard">
-                    <label for="" class="projectName"></label>
+                <div class="projectCard" href="">
+                    <label for="" class="projectName">Project</label>
                     <p class="projectText">
-                        ow properly surprise expenses interest nor replying she she. Bore tall nay many many time yet less.
+                        Was certainty remaining engrossed applauded sir how discovery. Settled opinion how enjoyed greater joy adapted too shy. 
                     </p>
-                    <div class="projectIcons"><img src="" alt="" class="projectIcon"><img src="" alt="" class="projectIcon"><img src="" alt="" class="projectIcon"></div>
+                    <div class="projectIcons">
+                        <img src="resources/star-plus-outline.svg" alt="" class="projectIcon">
+                        <img src="resources/eye-plus-outline.svg" alt="" class="projectIcon">
+                        <img src="resources/share-variant-outline.svg" alt="" class="projectIcon">
+                    </div>
                 </div>
-                <div class="projectCard">
-                    <label for="" class="projectName"></label>
+                <div class="projectCard" href="">
+                    <label for="" class="projectName">Project</label>
                     <p class="projectText">
-                        Doubtful for answered one fat indulged margaret sir shutters together. Ladies so in wholly around whence in at.
+                        Was certainty remaining engrossed applauded sir how discovery. Settled opinion how enjoyed greater joy adapted too shy. 
                     </p>
-                    <div class="projectIcons"><img src="" alt="" class="projectIcon"><img src="" alt="" class="projectIcon"><img src="" alt="" class="projectIcon"></div>
+                    <div class="projectIcons">
+                        <img src="resources/star-plus-outline.svg" alt="" class="projectIcon">
+                        <img src="resources/eye-plus-outline.svg" alt="" class="projectIcon">
+                        <img src="resources/share-variant-outline.svg" alt="" class="projectIcon">
+                    </div>
                 </div>
-                <div class="projectCard">
-                    <label for="" class="projectName"></label>
+                <div class="projectCard" href="">
+                    <label for="" class="projectName">Project</label>
                     <p class="projectText">
-                        Warmth he up giving oppose if. Impossible is dissimilar entreaties oh on terminated. 
+                        Was certainty remaining engrossed applauded sir how discovery. Settled opinion how enjoyed greater joy adapted too shy. 
                     </p>
-                    <div class="projectIcons"><img src="" alt="" class="projectIcon"><img src="" alt="" class="projectIcon"><img src="" alt="" class="projectIcon"></div>
+                    <div class="projectIcons">
+                        <img src="resources/star-plus-outline.svg" alt="" class="projectIcon">
+                        <img src="resources/eye-plus-outline.svg" alt="" class="projectIcon">
+                        <img src="resources/share-variant-outline.svg" alt="" class="projectIcon">
+                    </div>
                 </div>
-                <div class="projectCard">
-                    <label for="" class="projectName"></label>
+                <div class="projectCard" href="">
+                    <label for="" class="projectName">Project</label>
                     <p class="projectText">
-                        Debating me breeding be answered an he. Spoil event was words her off cause any. 
+                        Was certainty remaining engrossed applauded sir how discovery. Settled opinion how enjoyed greater joy adapted too shy. 
                     </p>
-                    <div class="projectIcons"><img src="" alt="" class="projectIcon"><img src="" alt="" class="projectIcon"><img src="" alt="" class="projectIcon"></div>
+                    <div class="projectIcons">
+                        <img src="resources/star-plus-outline.svg" alt="" class="projectIcon">
+                        <img src="resources/eye-plus-outline.svg" alt="" class="projectIcon">
+                        <img src="resources/share-variant-outline.svg" alt="" class="projectIcon">
+                    </div>
                 </div>
-                <div class="projectCard">
-                    <label for="" class="projectName"></label>
+                <div class="projectCard" href="">
+                    <label for="" class="projectName">Project</label>
                     <p class="projectText">
-                        Wished be do mutual except in effect answer. Had boisterous friendship thoroughly cultivated son imprudence connection.
+                        Was certainty remaining engrossed applauded sir how discovery. Settled opinion how enjoyed greater joy adapted too shy. 
                     </p>
-                    <div class="projectIcons"><img src="" alt="" class="projectIcon"><img src="" alt="" class="projectIcon"><img src="" alt="" class="projectIcon"></div>
+                    <div class="projectIcons">
+                        <img src="resources/star-plus-outline.svg" alt="" class="projectIcon">
+                        <img src="resources/eye-plus-outline.svg" alt="" class="projectIcon">
+                        <img src="resources/share-variant-outline.svg" alt="" class="projectIcon">
+                    </div>
                 </div>
+                <div class="projectCard" href="">
+                    <label for="" class="projectName">Project</label>
+                    <p class="projectText">
+                        Was certainty remaining engrossed applauded sir how discovery. Settled opinion how enjoyed greater joy adapted too shy. 
+                    </p>
+                    <div class="projectIcons">
+                        <img src="resources/star-plus-outline.svg" alt="" class="projectIcon">
+                        <img src="resources/eye-plus-outline.svg" alt="" class="projectIcon">
+                        <img src="resources/share-variant-outline.svg" alt="" class="projectIcon">
+                    </div>
+                </div>
+                <div class="projectCard" href="">
+                    <label for="" class="projectName">Project</label>
+                    <p class="projectText">
+                        Was certainty remaining engrossed applauded sir how discovery. Settled opinion how enjoyed greater joy adapted too shy. 
+                    </p>
+                    <div class="projectIcons">
+                        <img src="resources/star-plus-outline.svg" alt="" class="projectIcon">
+                        <img src="resources/eye-plus-outline.svg" alt="" class="projectIcon">
+                        <img src="resources/share-variant-outline.svg" alt="" class="projectIcon">
+                    </div>
+                </div>
+                <div class="projectCard" href="">
+                    <label for="" class="projectName">Project</label>
+                    <p class="projectText">
+                        Was certainty remaining engrossed applauded sir how discovery. Settled opinion how enjoyed greater joy adapted too shy. 
+                    </p>
+                    <div class="projectIcons">
+                        <img src="resources/star-plus-outline.svg" alt="" class="projectIcon">
+                        <img src="resources/eye-plus-outline.svg" alt="" class="projectIcon">
+                        <img src="resources/share-variant-outline.svg" alt="" class="projectIcon">
+                    </div>
+                </div>
+                <div class="projectCard" href="">
+                    <label for="" class="projectName">Project</label>
+                    <p class="projectText">
+                        Was certainty remaining engrossed applauded sir how discovery. Settled opinion how enjoyed greater joy adapted too shy. 
+                    </p>
+                    <div class="projectIcons">
+                        <img src="resources/star-plus-outline.svg" alt="" class="projectIcon">
+                        <img src="resources/eye-plus-outline.svg" alt="" class="projectIcon">
+                        <img src="resources/share-variant-outline.svg" alt="" class="projectIcon">
+                    </div>
+                </div>
+                <div class="projectCard" href="">
+                    <label for="" class="projectName">Project</label>
+                    <p class="projectText">
+                        Was certainty remaining engrossed applauded sir how discovery. Settled opinion how enjoyed greater joy adapted too shy. 
+                    </p>
+                    <div class="projectIcons">
+                        <img src="resources/star-plus-outline.svg" alt="" class="projectIcon">
+                        <img src="resources/eye-plus-outline.svg" alt="" class="projectIcon">
+                        <img src="resources/share-variant-outline.svg" alt="" class="projectIcon">
+                    </div>
+                </div>
+
+          
             </div>
         </div>
         <div id="mainLowerRight">
-
-        
             <div id="announcementBrowser">
-                <h1>Announcements</h1>
+                <h1 id="announcementHeader">Announcements</h1>
                 <div id="announcementContainer">
                     <div class="announcementCard">
                         <a href="" class="announcementTitle">Site Maintenance</a>
@@ -113,31 +195,31 @@
                 </div>
             </div>
             <div id="trendingSection">
-                <h1>Trending</h1>
+                <h1 id="trendingHeader">Trending</h1>
                 <div id="trendingContainer">
                     <div class="trendingCard">
-                        <div class="trendingUserIcon"></div>
+                        <div id="trendingUserIcon1" class="trendingUserIcon">T</div>
                         <div class="trendingCardText">
                             <p class="trendingUserId">@tegan</p>
                             <p class="trendingUserDescription">World Peace Builder</p>
                         </div>
                     </div>
                     <div class="trendingCard">
-                        <div class="trendingUserIcon"></div>
+                        <div id="trendingUserIcon2" class="trendingUserIcon">M</div>
                         <div class="trendingCardText">
                             <p class="trendingUserId">@morgan</p>
                             <p class="trendingUserDescription">Super Cool Project</p>
                         </div>
                     </div>
-                    <div class="trendingCard">
-                        <div class="trendingUserIcon"></div>
+                    <div  class="trendingCard">
+                        <div id="trendingUserIcon3" class="trendingUserIcon">K</div>
                         <div class="trendingCardText">
                             <p class="trendingUserId">@kendall</p>
                             <p class="trendingUserDescription">Life Changing App</p>
                         </div>
                     </div>
-                    <div class="trendingCard">
-                        <div class="trendingUserIcon"></div>
+                    <div  class="trendingCard">
+                        <div id="trendingUserIcon4" class="trendingUserIcon">A</div>
                         <div class="trendingCardText">
                             <p class="trendingUserId">@alex</p>
                             <p class="trendingUserDescription">No Traffic Maker</p>
@@ -145,6 +227,7 @@
                     </div>
                 </div>
              </div>
+
         </div>
     </div>
 </body>

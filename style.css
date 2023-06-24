@@ -1,27 +1,41 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;700&display=swap');
 
 * {
     font-family: 'Poppins', sans-serif;
 }
 
 
-
 body{
     display: grid;
-    grid-template: 10rem auto/ 17rem auto;
+    grid-template: 9rem auto/ 17rem auto;
     grid-gap:0px;
-    height: 100vh;
-    }
+    height:100vh;
+    ;
+}
+
 
 #sideBar{
+    display: flex;
+    height: 100%;
+    width: 17rem;
     grid-area: 1/1/3/1;
+    background-color: #cbd5e1;
+    
+}
+
+#sideBarContainerForSticky{
+    position: sticky;
+    top:0rem;
+    height: fit-content;
+    width:100%;
     display: flex;
     flex-direction: column;
     padding-top: 40%;
     padding-left: 2rem;
     
-    background-color: rgb(130, 179, 130);
-    border: 1px solid black;
+    
+    
+
 }
 
 #mainItem{
@@ -30,7 +44,6 @@ body{
  left: 0rem;
  padding-left: 1rem;
  padding-top: 1rem;
- width: 100%;   
  display: flex;
  align-items:center;
  flex-direction: row;
@@ -43,6 +56,7 @@ body{
 #mainLink{
     font-size: 2.1rem;
     margin-left: 3px;
+    font-weight: 700;
     
 }
 
@@ -59,8 +73,9 @@ body{
 
 .sideBarLink{
     color: black;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 1.2rem;
+
 }
 
 a{
@@ -74,37 +89,307 @@ a{
 }
 
 #mainUpper{
+    position:sticky;
+    top:0;
     grid-area:1/2/2/3;
-    display: grid;
-    background-color: rgb(152, 109, 194);
-    height: 10rem;
+    display: flex;
+    background-color: #f8fafc;
+    height: 9rem;
+    flex-direction: column;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-bottom: solid grey thin;
+    border-left: solid thin grey;
+    
 }
 
+.userIcon{
+    display: flex;
+    background-color: #cfa3a3;
+    color: #fff;
+    border-radius: 50%;
+    
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    
+}
+
+.trendingUserIcon{
+    display: flex;
+
+    color: #fff;
+    border-radius: 50%;
+    
+    justify-content: center;
+    align-items: center;
+
+    font-size: 1.4rem;
+    line-height: 2.2rem; /* set to same size as width, height */
+    width: 2.2rem;
+    height: 2.2rem;
+    margin-right: .5rem;
+    cursor: pointer;
+}
+
+#trendingUserIcon1{
+    background-color: #705c5c;
+}
+#trendingUserIcon2{
+    background-color: #a3cfc9;
+}
+#trendingUserIcon3{
+    background-color: #a3b2cf;
+}
+#trendingUserIcon4{
+    background-color: #c8cfa3;
+}
+.trendingCard{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1rem;
+}
+
+
+
+.trendingUserId{
+    font-size: .8rem;
+    margin-bottom: .2rem;
+    cursor: pointer;
+}
+.trendingUserDescription{
+    font-size: .9rem;
+    padding-left: .1rem;
+    cursor: pointer;
+}
+
+
+#userIconRow1{
+    font-size: 1.4rem;
+    line-height: 2.2rem; /* set to same size as width, height */
+    width: 2.2rem;
+    height: 2.2rem;
+    margin-left: 1rem;
+}
+
+#userIconRow2{
+    font-size: 2rem;
+    line-height: 2.2rem; /* set to same size as width, height */
+    width: 3rem;
+    height: 3rem;
+    margin-right: .5rem;
+    
+}
+
+#newBtn{
+    margin-left: auto;
+}
+
+.rightRow2Btn{
+    height: 2rem;
+    width: 5rem;
+    margin-left: 1rem;
+    border-radius: 1rem;
+    font-size: .8rem;
+    font-weight: 600;
+    color: #f1f5f9;
+    background-color: #64748b;
+    cursor: pointer;
+}
+
+#userNameWithID{
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#upperRow2{
+    display: flex;
+    flex-direction: row;
+    justify-items: left;
+    align-items: center;
+    flex:1
+}
+
+#hiThere{
+    font-size: .8rem;
+    font-weight: 500;
+}
+
+
+#upperRow1{
+    display: flex;
+    flex-direction: row;
+    height: 40%;
+}
+
+#upperRow1>*{
+    align-self: center;
+}
+
+#searchBar{
+    height: 1.5rem;
+    width: clamp(5rem, 50%, 50%);
+    align-self: flex-end;
+    border-radius: 5px;
+    background-color: rgb(202, 211, 219);
+    margin-right: .5rem;
+}
+
+#searchIcon{
+    height: 1.8rem;
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+#alarmIcon{
+    height: 1.8rem;
+
+    margin-left: auto;
+    cursor: pointer;
+
+}
+
+#userName{
+    display: flex;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-left: 1rem;
+    cursor: pointer;
+}
 
 #mainLower{
     grid-area:2/2/3/3;
     display: grid;
     grid-template: 1fr/ minmax(20rem, auto) 20rem;
-    background-color:rgb(233, 155, 155);
+    background-color:#e2e8f0;
     height: 100%;
+    border-top: solid grey thin ;
+    border-left: solid thin grey;
 
 }
 
 #projectBrowser{ 
     background-color: rgb(184, 192, 172);
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: #e2e8f0;
 }
 
-#mainLowerRight{
+#projectBrowserContainer{
     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+    gap:1rem;
+    
+        
 }
 
+#yourProjects{
+    font-size: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1.2rem;
+    font-weight: 700;
+    
+
+}
+
+.projectCard{   
+    background-color: white;
+    border-left: solid thick #64748b;
+    
+    padding: 1rem;
+    display: flex;
+    flex-direction:column;
+    border-radius: 5px;
+    box-shadow: 3px 3px 2px #888888;;
+}
+
+.projectName{
+    font-weight: 700;
+    margin-bottom: .5rem;
+    cursor: pointer;
+}
+
+.projectText{
+    line-height: 1.2rem;
+    margin-bottom:.7rem;
+    cursor: pointer;    
+}
+
+.projectIcons{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-end;
+    cursor: pointer;
+}
+
+.projectIcon{
+    width: 1.5rem;
+    margin-left: .5rem;
+    
+}
+#mainLowerRight{
+    position: sticky;
+    top:9rem;
+    display: flex;
+    flex-direction: column;
+    height:fit-content;
+}
 
 #announcementBrowser{
-    background-color: rgb(138, 100, 100);
+    
+    background-color: #e2e8f0;
     grid-column:2/3;
+    padding:.75rem;
+    padding-right: 1.5rem;
+    height: auto;
+    
+}
+#announcementHeader, #trendingHeader{
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    font-weight: 700;
+}
+#announcementContainer{
+    background-color: white;
+    padding:1.5rem;
+    border-radius: 5px;
+    padding-top:0.1rem;
+    box-shadow: 3px 3px 2px #888888;
+}
+
+.announcementCard{
+    padding-bottom: 1rem;
+    margin-top: 1rem;
+    border-bottom: solid thin black;
+    
+}
+
+.announcementTitle{
+    display: block;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: .3rem;
+    color: black;
+    
+}
+
+.announcementText{
+    font-size: .7rem;
+    color: black;
 }
 
 #trendingSection{
-    background-color: aqua;
-    grid-column:2/3;
+    height: auto;
+    margin-left: 1rem;
+    margin-right:1.5rem;
+}
+
+#trendingContainer{
+    background-color: #ffffff;
+    padding-top: 0rem;
+    padding:1rem;
+    box-shadow: 3px 3px 2px #888888;
+    border-radius: 5px;
+
 }
